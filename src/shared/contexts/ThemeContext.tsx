@@ -12,11 +12,11 @@ interface IAppThemeProvider {
 	children: React.ReactNode;
 }
 
-const ThemeContext = createContext({} as IThemeContextData)
+const ThemeContext = createContext({} as IThemeContextData);
 
 export const useAppThemeContext = () => {
 	return useContext(ThemeContext);
-}
+};
 
 export const AppThemeProvider: React.FC<IAppThemeProvider> = ({ children }) => {
 	const [themeName, setThemeName] = useState<'light' | 'dark'>('light');
@@ -39,5 +39,5 @@ export const AppThemeProvider: React.FC<IAppThemeProvider> = ({ children }) => {
 				</Box>
 			</ThemeProvider>
 		</ThemeContext.Provider>
-	)
-}
+	);
+};
