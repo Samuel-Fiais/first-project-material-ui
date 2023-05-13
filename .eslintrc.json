@@ -22,7 +22,6 @@
     "rules": {
         "indent": [
             "error",
-            "tab",
             2
         ],
         "linebreak-style": [
@@ -37,6 +36,8 @@
             "error",
             "always"
         ],
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off"
     }
+      
 }
